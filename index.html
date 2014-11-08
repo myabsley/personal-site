@@ -222,17 +222,45 @@
 
 		<div class="icons">
 			<a href="mailto:meghan@myabsley.com" class="no-hover"><img src="images/mail.svg" alt="" class="social-icon"></a>
-<!-- 			<a href="https://www.linkedin.com" target="_blank" class="no-hover"><img src="images/linkedin.svg" alt="" class="social-icon"></a> -->
+			<a href="https://www.twitter.com/@MeghanYabsley" target="_blank" class="no-hover"><img src="images/twitter.svg" alt="" class="social-icon"></a>
 			<a href="https://www.facebook.com/meghan.yabsley" target="_blank" class="no-hover"><img src="images/facebook.svg" alt="" class="social-icon"></a>
 <!-- 			<a href="https://www.forrst.com" target="_blank" class="no-hover"><img src="images/forrst.svg" alt="" class="social-icon"></a> -->
 		</div>
 
+		<form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+		      action="https://myabsley.wufoo.com/forms/z9x8qqz1y9y1c7/#public">
+		  
 
-		<form method="post" name="emailForm" action="form-to-email.php">
-			<input type="text" placeholder="Your Name">
-			<input type="email" placeholder="Your Email">
-			<textarea name="message" id="" cols="30" rows="10" placeholder="Dear Meghan..."></textarea>
-			<input type="submit">
+		<ul>
+
+		<li id="foli112" class="notranslate      ">
+			<div>
+			<input id="Field112" name="Field112" type="text" class="field text medium" value="" maxlength="50" tabindex="1" onkeyup="validateRange(112, 'character');" required placeholder="Your Name" />
+			</div>
+		</li>
+		<li id="foli3" class="notranslate">
+			<div>
+			<input id="Field3" name="Field3" type="email" spellcheck="false" class="field text large" value="" maxlength="255" tabindex="2" required placeholder="Your Email" />
+			</div>
+		</li>
+		<li id="foli104"
+		class="notranslate">
+			<div>
+			<textarea id="Field104" name="Field104" class="field textarea medium" spellcheck="true" rows="10" cols="50" tabindex="3" onkeyup="" required  placeholder="Dear Meghan..."></textarea>
+			</div>
+		</li>
+		<li class="buttons">
+			<div>
+			    <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit"/>
+			 </div>
+		</li>
+
+		<li class="hide">
+			<label for="comment">Do Not Fill This Out</label>
+			<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+			<input type="hidden" id="idstamp" name="idstamp" value="O3Sp60QQ4aJWLLdY9Iu7LFiLAeRUfEqD7gdf2LQ1MTw=" />
+		</li>
+		</ul>
 		</form>
 
 
@@ -279,6 +307,14 @@
       	$('a.menuIcon').click(function() {
       	  $('.open').removeClass('open');
       	  $(this).next().slideToggle('open');
+      	});
+
+      	$('#saveForm').on('click', function(e){
+      		e.preventDefaults;
+      	});
+
+      	$('.workTile').on('click', function(e){
+      		e.preventDefaults;
       	});
 
 

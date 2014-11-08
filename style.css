@@ -32,8 +32,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 body {
 	background: #fbfbfb;
 	text-align: right;
-/*	background-image: url(images/meghan.jpg);
-	background-size: cover;*/
 	background-attachment: fixed;
 	font-family: "proxima-nova", "Proxima Nova", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 	height: 100%;
@@ -42,7 +40,7 @@ body {
 
 
 .welcome {
-	background-image: url(images/meghan.jpg);
+	background-image: url(images/meghan-2-2014.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100%;
@@ -188,7 +186,7 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
-	background: #FA4133;
+	background: #1abc9c;
 }
 
 
@@ -483,6 +481,18 @@ a.no-hover:hover {
 	font-family: "proxima-nova", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
+form ul {
+	padding: 0;
+}
+
+form li {
+	list-style-type: none;
+}
+
+form li.hide {
+	display: none;
+}
+
 .section4 p {
 	text-align: center;
 	/*line-height: 1;*/
@@ -560,9 +570,8 @@ a.no-hover:hover {
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 	.welcome {
-		background-image: url(images/meghan-smaller3.jpg);
+		background-image: url(images/meghan-2-2014.jpg);
 		background-repeat: no-repeat;
-		/*background-size: 100% 100%;*/
 	}
 
 	.scrollSection {
